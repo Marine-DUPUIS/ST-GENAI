@@ -32,8 +32,8 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Insérer directement la clé API ici (c'est temporaire et non recommandé pour la production)
-api_key = "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"
+# Insérer la clé API
+api_key = os.getenv("OPENAI_API_KEY")
 # Vérifier si la clé est bien présente
 if not api_key:
     st.error("Clé API OpenAI manquante. Assurez-vous de l'insérer correctement dans le fichier app.py.")
