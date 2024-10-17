@@ -34,6 +34,7 @@ st.markdown("""
 
 # Insérer la clé API
 api_key = os.getenv("OPENAI_API_KEY")
+
 # Vérifier si la clé est bien présente
 if not api_key:
     st.error("Clé API OpenAI manquante. Assurez-vous de l'insérer correctement dans le fichier app.py.")
